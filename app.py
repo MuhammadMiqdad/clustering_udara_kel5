@@ -14,6 +14,9 @@ if uploaded_file is not None:
     # Baca citra yang diunggah
     image = np.array(Image.open(uploaded_file))
 
+    # Tampilkan gambar asli
+    st.image(image, caption="Gambar Asli", use_column_width=True)
+
     # Tampilkan ukuran gambar asli
     st.write(f"Ukuran gambar asli: {image.shape}")  # Menampilkan seluruh dimensi gambar (height, width, channels)
 
